@@ -91,7 +91,16 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+
+alias sczsh="source ~/.zshrc"
+
+# dotfile management
+alias cddotfiles="cd ~/dotfiles && ls -a && git status"
+
+# adb
 alias adbrefresh="adb kill-server && adb start-server && adb devices"
+
+# React and React Native
+alias reactwatchmanfix="sudo sysctl -w fs.inotify.max_user_instances=1024 && sudo sysctl -w fs.inotify.max_user_watches=524288"
